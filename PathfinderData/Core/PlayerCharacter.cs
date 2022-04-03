@@ -18,12 +18,19 @@ namespace PathfinderData.Core
 
         public class Attributes
         {
-            public int Strength { get; set; }
-            public int Dexterity { get; set; }
-            public int Constitution { get; set; }
-            public int Intelligence { get; set; }
-            public int Wisdom { get; set; }
-            public int Charisma { get; set; }
+            public Stat Strength { get; set; }
+            public Stat Dexterity { get; set; }
+            public Stat Constitution { get; set; }
+            public Stat Intelligence { get; set; }
+            public Stat Wisdom { get; set; }
+            public Stat Charisma { get; set; }
+        }
+
+        public class Stat
+        {
+            public int BaseValue { get; set; } = 0;
+            public int TempValue { get; set; } = 0;
+            public int ModValue { get; set; } = 0;
         }
 
         public class Modifier
