@@ -9,7 +9,7 @@ namespace PathfinderData.Core
     internal class CoreStatistics
     {
     }
-
+    [Serializable]
     public class ArmorClass
     {
         public ArmorClass(int DexMod)
@@ -30,6 +30,7 @@ namespace PathfinderData.Core
         public int MiscBonus { get; set; } = 0;
         public List<Modifier> Modifiers { get; set; } = new List<Modifier>();
     }
+    [Serializable]
     public class Health
     {
         public int Total { get; set; }
@@ -37,12 +38,14 @@ namespace PathfinderData.Core
         public int NonLethal { get; set; } = 0;
            
     }
+    [Serializable]
     public class SavingThrows
     {
         public Save Fortitude { get; set; }
         public Save Reflex { get; set; }
         public Save Will { get; set; }
     }
+    [Serializable]
     public class Save
     {
         public int TotalValue { get; }
@@ -50,23 +53,24 @@ namespace PathfinderData.Core
         public int AbilityValue { get; set; }
         public int ModValue { get; set; }
     }
+    [Serializable]
     public class AbilityScores
     {
-        public AbilityScore Strength { get; set; }
-        public AbilityScore Dexterity { get; set; }
-        public AbilityScore Constitution { get; set; }
-        public AbilityScore Intelligence { get; set; }
-        public AbilityScore Wisdom { get; set; }
-        public AbilityScore Charisma { get; set; }
+        public AbilityScore Strength { get; set; } = new AbilityScore();
+        public AbilityScore Dexterity { get; set; } = new AbilityScore();
+        public AbilityScore Constitution { get; set; } = new AbilityScore();
+        public AbilityScore Intelligence { get; set; } = new AbilityScore();
+        public AbilityScore Wisdom { get; set; } = new AbilityScore();
+        public AbilityScore Charisma { get; set; } = new AbilityScore();
     }
-
+    [Serializable]
     public class AbilityScore
     {
-        public int BaseValue { get; set; } = 0;
-        public int TempValue { get; set; } = 0;
-        public int ModValue { get; }
+        public int BaseValue { get; set; } = 10;
+        public int TempValue { get; set; } = 10;
+        public int ModValue { get => (TempValue - 10) / 2; }
     }
-
+    [Serializable]
     public class Modifier
     {
         public string Name { get; set; }
@@ -74,9 +78,14 @@ namespace PathfinderData.Core
         public string Subtype { get; set; }
         public int Mod { get; set; }
     }
-
+    [Serializable]
     public class Skill
     {
+        public Skill(string name, string ability)
+        {
+            Name = name;
+            Ability = ability;
+        }
         public string Name { get; set; } = string.Empty;
         public string Ability { get; set; } = string.Empty;
         public bool IsClassSkill { get; set; } = false;

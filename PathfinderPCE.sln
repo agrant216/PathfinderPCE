@@ -3,9 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PathfinderPCE", "PathfinderPCE\PathfinderPCE.csproj", "{AD9CDD65-A62B-476C-AE3E-385BA49FA384}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PathfinderPCE", "PathfinderPCE\PathfinderPCE.csproj", "{AD9CDD65-A62B-476C-AE3E-385BA49FA384}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AEDFDFFE-B7FD-4B5C-8AC5-D996F146D2AD} = {AEDFDFFE-B7FD-4B5C-8AC5-D996F146D2AD}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PathfinderData", "PathfinderData\PathfinderData.csproj", "{AEDFDFFE-B7FD-4B5C-8AC5-D996F146D2AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PathfinderData", "PathfinderData\PathfinderData.csproj", "{AEDFDFFE-B7FD-4B5C-8AC5-D996F146D2AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
