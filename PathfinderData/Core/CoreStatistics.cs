@@ -36,7 +36,7 @@ namespace PathfinderData.Core
         public int Total { get; set; }
         public int Wounds { get; set; } = 0;
         public int NonLethal { get; set; } = 0;
-           
+
     }
     [Serializable]
     public class SavingThrows
@@ -94,5 +94,54 @@ namespace PathfinderData.Core
         public int Ranks { get; set; }
         public int MiscMod { get; set; }
 
+    }
+
+    [Serializable]
+    public class Skills
+    {
+        public Skills()
+        {
+            SkillList =  new List<Skill>()
+            {
+                {new Skill("Acrobatics", "Dexterity") },
+                {new Skill("Appraise", "Intelligence") },
+                {new Skill("Bluff", "Charisma") },
+                {new Skill("Climb", "Strength") },
+                {new Skill("Craft", "Intelligence") },
+                {new Skill("Diplomacy", "Charisma") },
+                {new Skill("Disable Device", "Dexterity") },
+                {new Skill("Disguise", "Charisma") },
+                {new Skill("Escape Artist", "Dexterity") },
+                {new Skill("Fly", "Dexterity") },
+                {new Skill("Handle Animal", "Charisma") },
+                {new Skill("Heal", "Wisdom") },
+                {new Skill("Intimidate", "Charisma") },
+                {new Skill("Knowledge (arcana)", "Intelligence") },
+                {new Skill("Knowledge (dungeoneering)", "Intelligence") },
+                {new Skill("Knowledge (engineering)", "Intelligence") },
+                {new Skill("Knowledge (geography)", "Intelligence") },
+                {new Skill("Knowledge (history)", "Intelligence") },
+                {new Skill("Knowledge (local)", "Intelligence") },
+                {new Skill("Knowledge (nature)", "Intelligence") },
+                {new Skill("Knowledge (nobility)", "Intelligence") },
+                {new Skill("Knowledge (planes)", "Intelligence") },
+                {new Skill("Knowledge (religion)", "Intelligence") },
+                {new Skill("Linguistics", "Intelligence") },
+                {new Skill("Perception", "Wisdom") },
+                {new Skill("Perform", "Charisma") },
+                {new Skill("Profession", "Wisdom") },
+                {new Skill("Ride", "Dexterity") },
+                {new Skill("Sense Motive", "Wisdom") },
+                {new Skill("Sleight of Hand", "Dexterity") },
+                {new Skill("Spellcraft", "Intelligence") },
+                {new Skill("Stealth", "Dexterity") },
+                {new Skill("Survival", "Wisdom") },
+                {new Skill("Swim", "Strength") },
+                {new Skill("Use Magic Device", "Charisma") },
+            };
+            Modifiers = new List<Modifier>();
+        }
+        public List<Skill> SkillList { get; set; }
+        public List<Modifier> Modifiers { get; set; }
     }
 }
