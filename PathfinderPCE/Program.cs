@@ -1,8 +1,16 @@
 var builder = WebApplication.CreateBuilder(args);
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: MyAllowSpecificOrigins,
+                      policy =>
+                      {
+                          policy.WithOrigins("http://localhost:4200");
+                      });
+});
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -17,9 +25,9 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
-
+app.UseCors(MyAllowSpecificOrigins);
 app.UseAuthorization();
+app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
 
 app.MapRazorPages();
 
