@@ -1,5 +1,5 @@
 ﻿{
-  "id": "9830e5cb-ec65-4422-90e9-8143d4eccc7b",
+  "id": "ec20a185-e314-4b0d-b28d-6b8519bd1f07",
   "name": "",
   "level": 1,
   "classLevels": {},
@@ -9,36 +9,45 @@
     "nonLethal": 0
   },
   "abilityScores": {
-    "strength": {
-      "baseValue": 10,
-      "tempValue": 10,
-      "modValue": 0
+    "abilities": {
+      "Strength": {
+        "name": "Strength",
+        "baseValue": 10,
+        "tempValue": 10,
+        "modValue": 0
+      },
+      "Dexterity": {
+        "name": "Dexterity",
+        "baseValue": 10,
+        "tempValue": 10,
+        "modValue": 0
+      },
+      "Constitution": {
+        "name": "Constitution",
+        "baseValue": 10,
+        "tempValue": 10,
+        "modValue": 0
+      },
+      "Intelligence": {
+        "name": "Intelligence",
+        "baseValue": 10,
+        "tempValue": 10,
+        "modValue": 0
+      },
+      "Wisdom": {
+        "name": "Wisdom",
+        "baseValue": 10,
+        "tempValue": 10,
+        "modValue": 0
+      },
+      "Charisma": {
+        "name": "Charisma",
+        "baseValue": 10,
+        "tempValue": 10,
+        "modValue": 0
+      }
     },
-    "dexterity": {
-      "baseValue": 10,
-      "tempValue": 10,
-      "modValue": 0
-    },
-    "constitution": {
-      "baseValue": 10,
-      "tempValue": 10,
-      "modValue": 0
-    },
-    "intelligence": {
-      "baseValue": 10,
-      "tempValue": 10,
-      "modValue": 0
-    },
-    "wisdom": {
-      "baseValue": 10,
-      "tempValue": 10,
-      "modValue": 0
-    },
-    "charisma": {
-      "baseValue": 10,
-      "tempValue": 10,
-      "modValue": 0
-    }
+    "modifiers": []
   },
   "ac": {
     "total": 10,
@@ -56,321 +65,323 @@
     "modifiers": []
   },
   "skills": {
-    "Acrobatics": {
-      "name": "Acrobatics",
-      "ability": "Dexterity",
-      "isClassSkill": false,
-      "totalMod": 0,
-      "abilityMod": 0,
-      "ranks": 0,
-      "miscMod": 0
-    },
-    "Appraise": {
-      "name": "Appraise",
-      "ability": "Intelligence",
-      "isClassSkill": false,
-      "totalMod": 0,
-      "abilityMod": 0,
-      "ranks": 0,
-      "miscMod": 0
-    },
-    "Bluff": {
-      "name": "Bluff",
-      "ability": "Charisma",
-      "isClassSkill": false,
-      "totalMod": 0,
-      "abilityMod": 0,
-      "ranks": 0,
-      "miscMod": 0
-    },
-    "Climb": {
-      "name": "Climb",
-      "ability": "Strength",
-      "isClassSkill": false,
-      "totalMod": 0,
-      "abilityMod": 0,
-      "ranks": 0,
-      "miscMod": 0
-    },
-    "Craft": {
-      "name": "Craft",
-      "ability": "Intelligence",
-      "isClassSkill": false,
-      "totalMod": 0,
-      "abilityMod": 0,
-      "ranks": 0,
-      "miscMod": 0
-    },
-    "Diplomacy": {
-      "name": "Diplomacy",
-      "ability": "Charisma",
-      "isClassSkill": false,
-      "totalMod": 0,
-      "abilityMod": 0,
-      "ranks": 0,
-      "miscMod": 0
-    },
-    "Disable Device": {
-      "name": "Disable Device",
-      "ability": "Dexterity",
-      "isClassSkill": false,
-      "totalMod": 0,
-      "abilityMod": 0,
-      "ranks": 0,
-      "miscMod": 0
-    },
-    "Disguise": {
-      "name": "Disguise",
-      "ability": "Charisma",
-      "isClassSkill": false,
-      "totalMod": 0,
-      "abilityMod": 0,
-      "ranks": 0,
-      "miscMod": 0
-    },
-    "Escape Artist": {
-      "name": "Escape Artist",
-      "ability": "Dexterity",
-      "isClassSkill": false,
-      "totalMod": 0,
-      "abilityMod": 0,
-      "ranks": 0,
-      "miscMod": 0
-    },
-    "Fly": {
-      "name": "Fly",
-      "ability": "Dexterity",
-      "isClassSkill": false,
-      "totalMod": 0,
-      "abilityMod": 0,
-      "ranks": 0,
-      "miscMod": 0
-    },
-    "Handle Animal": {
-      "name": "Handle Animal",
-      "ability": "Charisma",
-      "isClassSkill": false,
-      "totalMod": 0,
-      "abilityMod": 0,
-      "ranks": 0,
-      "miscMod": 0
-    },
-    "Heal": {
-      "name": "Heal",
-      "ability": "Wisdom",
-      "isClassSkill": false,
-      "totalMod": 0,
-      "abilityMod": 0,
-      "ranks": 0,
-      "miscMod": 0
-    },
-    "Intimidate": {
-      "name": "Intimidate",
-      "ability": "Charisma",
-      "isClassSkill": false,
-      "totalMod": 0,
-      "abilityMod": 0,
-      "ranks": 0,
-      "miscMod": 0
-    },
-    "Knowledge (arcana)": {
-      "name": "Knowledge (arcana)",
-      "ability": "Intelligence",
-      "isClassSkill": false,
-      "totalMod": 0,
-      "abilityMod": 0,
-      "ranks": 0,
-      "miscMod": 0
-    },
-    "Knowledge (dungeoneering)": {
-      "name": "Knowledge (dungeoneering)",
-      "ability": "Intelligence",
-      "isClassSkill": false,
-      "totalMod": 0,
-      "abilityMod": 0,
-      "ranks": 0,
-      "miscMod": 0
-    },
-    "Knowledge (engineering)": {
-      "name": "Knowledge (engineering)",
-      "ability": "Intelligence",
-      "isClassSkill": false,
-      "totalMod": 0,
-      "abilityMod": 0,
-      "ranks": 0,
-      "miscMod": 0
-    },
-    "Knowledge (geography)": {
-      "name": "Knowledge (geography)",
-      "ability": "Intelligence",
-      "isClassSkill": false,
-      "totalMod": 0,
-      "abilityMod": 0,
-      "ranks": 0,
-      "miscMod": 0
-    },
-    "Knowledge (history)": {
-      "name": "Knowledge (history)",
-      "ability": "Intelligence",
-      "isClassSkill": false,
-      "totalMod": 0,
-      "abilityMod": 0,
-      "ranks": 0,
-      "miscMod": 0
-    },
-    "Knowledge (local)": {
-      "name": "Knowledge (local)",
-      "ability": "Intelligence",
-      "isClassSkill": false,
-      "totalMod": 0,
-      "abilityMod": 0,
-      "ranks": 0,
-      "miscMod": 0
-    },
-    "Knowledge (nature)": {
-      "name": "Knowledge (nature)",
-      "ability": "Intelligence",
-      "isClassSkill": false,
-      "totalMod": 0,
-      "abilityMod": 0,
-      "ranks": 0,
-      "miscMod": 0
-    },
-    "Knowledge (nobility)": {
-      "name": "Knowledge (nobility)",
-      "ability": "Intelligence",
-      "isClassSkill": false,
-      "totalMod": 0,
-      "abilityMod": 0,
-      "ranks": 0,
-      "miscMod": 0
-    },
-    "Knowledge (planes)": {
-      "name": "Knowledge (planes)",
-      "ability": "Intelligence",
-      "isClassSkill": false,
-      "totalMod": 0,
-      "abilityMod": 0,
-      "ranks": 0,
-      "miscMod": 0
-    },
-    "Knowledge (religion)": {
-      "name": "Knowledge (religion)",
-      "ability": "Intelligence",
-      "isClassSkill": false,
-      "totalMod": 0,
-      "abilityMod": 0,
-      "ranks": 0,
-      "miscMod": 0
-    },
-    "Linguistics": {
-      "name": "Linguistics",
-      "ability": "Intelligence",
-      "isClassSkill": false,
-      "totalMod": 0,
-      "abilityMod": 0,
-      "ranks": 0,
-      "miscMod": 0
-    },
-    "Perception": {
-      "name": "Perception",
-      "ability": "Wisdom",
-      "isClassSkill": false,
-      "totalMod": 0,
-      "abilityMod": 0,
-      "ranks": 0,
-      "miscMod": 0
-    },
-    "Perform": {
-      "name": "Perform",
-      "ability": "Charisma",
-      "isClassSkill": false,
-      "totalMod": 0,
-      "abilityMod": 0,
-      "ranks": 0,
-      "miscMod": 0
-    },
-    "Profession": {
-      "name": "Profession",
-      "ability": "Wisdom",
-      "isClassSkill": false,
-      "totalMod": 0,
-      "abilityMod": 0,
-      "ranks": 0,
-      "miscMod": 0
-    },
-    "Ride": {
-      "name": "Ride",
-      "ability": "Dexterity",
-      "isClassSkill": false,
-      "totalMod": 0,
-      "abilityMod": 0,
-      "ranks": 0,
-      "miscMod": 0
-    },
-    "Sense Motive": {
-      "name": "Sense Motive",
-      "ability": "Wisdom",
-      "isClassSkill": false,
-      "totalMod": 0,
-      "abilityMod": 0,
-      "ranks": 0,
-      "miscMod": 0
-    },
-    "Sleight of Hand": {
-      "name": "Sleight of Hand",
-      "ability": "Dexterity",
-      "isClassSkill": false,
-      "totalMod": 0,
-      "abilityMod": 0,
-      "ranks": 0,
-      "miscMod": 0
-    },
-    "Spellcraft": {
-      "name": "Spellcraft",
-      "ability": "Intelligence",
-      "isClassSkill": false,
-      "totalMod": 0,
-      "abilityMod": 0,
-      "ranks": 0,
-      "miscMod": 0
-    },
-    "Stealth": {
-      "name": "Stealth",
-      "ability": "Dexterity",
-      "isClassSkill": false,
-      "totalMod": 0,
-      "abilityMod": 0,
-      "ranks": 0,
-      "miscMod": 0
-    },
-    "Survival": {
-      "name": "Survival",
-      "ability": "Wisdom",
-      "isClassSkill": false,
-      "totalMod": 0,
-      "abilityMod": 0,
-      "ranks": 0,
-      "miscMod": 0
-    },
-    "Swim": {
-      "name": "Swim",
-      "ability": "Strength",
-      "isClassSkill": false,
-      "totalMod": 0,
-      "abilityMod": 0,
-      "ranks": 0,
-      "miscMod": 0
-    },
-    "Use Magic Device": {
-      "name": "Use Magic Device",
-      "ability": "Charisma",
-      "isClassSkill": false,
-      "totalMod": 0,
-      "abilityMod": 0,
-      "ranks": 0,
-      "miscMod": 0
-    }
-  },
-  "modifiers": []
+    "skillList": [
+      {
+        "name": "Acrobatics",
+        "ability": "Dexterity",
+        "isClassSkill": false,
+        "totalMod": 0,
+        "abilityMod": 0,
+        "ranks": 0,
+        "miscMod": 0
+      },
+      {
+        "name": "Appraise",
+        "ability": "Intelligence",
+        "isClassSkill": false,
+        "totalMod": 0,
+        "abilityMod": 0,
+        "ranks": 0,
+        "miscMod": 0
+      },
+      {
+        "name": "Bluff",
+        "ability": "Charisma",
+        "isClassSkill": false,
+        "totalMod": 0,
+        "abilityMod": 0,
+        "ranks": 0,
+        "miscMod": 0
+      },
+      {
+        "name": "Climb",
+        "ability": "Strength",
+        "isClassSkill": false,
+        "totalMod": 0,
+        "abilityMod": 0,
+        "ranks": 0,
+        "miscMod": 0
+      },
+      {
+        "name": "Craft",
+        "ability": "Intelligence",
+        "isClassSkill": false,
+        "totalMod": 0,
+        "abilityMod": 0,
+        "ranks": 0,
+        "miscMod": 0
+      },
+      {
+        "name": "Diplomacy",
+        "ability": "Charisma",
+        "isClassSkill": false,
+        "totalMod": 0,
+        "abilityMod": 0,
+        "ranks": 0,
+        "miscMod": 0
+      },
+      {
+        "name": "Disable Device",
+        "ability": "Dexterity",
+        "isClassSkill": false,
+        "totalMod": 0,
+        "abilityMod": 0,
+        "ranks": 0,
+        "miscMod": 0
+      },
+      {
+        "name": "Disguise",
+        "ability": "Charisma",
+        "isClassSkill": false,
+        "totalMod": 0,
+        "abilityMod": 0,
+        "ranks": 0,
+        "miscMod": 0
+      },
+      {
+        "name": "Escape Artist",
+        "ability": "Dexterity",
+        "isClassSkill": false,
+        "totalMod": 0,
+        "abilityMod": 0,
+        "ranks": 0,
+        "miscMod": 0
+      },
+      {
+        "name": "Fly",
+        "ability": "Dexterity",
+        "isClassSkill": false,
+        "totalMod": 0,
+        "abilityMod": 0,
+        "ranks": 0,
+        "miscMod": 0
+      },
+      {
+        "name": "Handle Animal",
+        "ability": "Charisma",
+        "isClassSkill": false,
+        "totalMod": 0,
+        "abilityMod": 0,
+        "ranks": 0,
+        "miscMod": 0
+      },
+      {
+        "name": "Heal",
+        "ability": "Wisdom",
+        "isClassSkill": false,
+        "totalMod": 0,
+        "abilityMod": 0,
+        "ranks": 0,
+        "miscMod": 0
+      },
+      {
+        "name": "Intimidate",
+        "ability": "Charisma",
+        "isClassSkill": false,
+        "totalMod": 0,
+        "abilityMod": 0,
+        "ranks": 0,
+        "miscMod": 0
+      },
+      {
+        "name": "Knowledge (arcana)",
+        "ability": "Intelligence",
+        "isClassSkill": false,
+        "totalMod": 0,
+        "abilityMod": 0,
+        "ranks": 0,
+        "miscMod": 0
+      },
+      {
+        "name": "Knowledge (dungeoneering)",
+        "ability": "Intelligence",
+        "isClassSkill": false,
+        "totalMod": 0,
+        "abilityMod": 0,
+        "ranks": 0,
+        "miscMod": 0
+      },
+      {
+        "name": "Knowledge (engineering)",
+        "ability": "Intelligence",
+        "isClassSkill": false,
+        "totalMod": 0,
+        "abilityMod": 0,
+        "ranks": 0,
+        "miscMod": 0
+      },
+      {
+        "name": "Knowledge (geography)",
+        "ability": "Intelligence",
+        "isClassSkill": false,
+        "totalMod": 0,
+        "abilityMod": 0,
+        "ranks": 0,
+        "miscMod": 0
+      },
+      {
+        "name": "Knowledge (history)",
+        "ability": "Intelligence",
+        "isClassSkill": false,
+        "totalMod": 0,
+        "abilityMod": 0,
+        "ranks": 0,
+        "miscMod": 0
+      },
+      {
+        "name": "Knowledge (local)",
+        "ability": "Intelligence",
+        "isClassSkill": false,
+        "totalMod": 0,
+        "abilityMod": 0,
+        "ranks": 0,
+        "miscMod": 0
+      },
+      {
+        "name": "Knowledge (nature)",
+        "ability": "Intelligence",
+        "isClassSkill": false,
+        "totalMod": 0,
+        "abilityMod": 0,
+        "ranks": 0,
+        "miscMod": 0
+      },
+      {
+        "name": "Knowledge (nobility)",
+        "ability": "Intelligence",
+        "isClassSkill": false,
+        "totalMod": 0,
+        "abilityMod": 0,
+        "ranks": 0,
+        "miscMod": 0
+      },
+      {
+        "name": "Knowledge (planes)",
+        "ability": "Intelligence",
+        "isClassSkill": false,
+        "totalMod": 0,
+        "abilityMod": 0,
+        "ranks": 0,
+        "miscMod": 0
+      },
+      {
+        "name": "Knowledge (religion)",
+        "ability": "Intelligence",
+        "isClassSkill": false,
+        "totalMod": 0,
+        "abilityMod": 0,
+        "ranks": 0,
+        "miscMod": 0
+      },
+      {
+        "name": "Linguistics",
+        "ability": "Intelligence",
+        "isClassSkill": false,
+        "totalMod": 0,
+        "abilityMod": 0,
+        "ranks": 0,
+        "miscMod": 0
+      },
+      {
+        "name": "Perception",
+        "ability": "Wisdom",
+        "isClassSkill": false,
+        "totalMod": 0,
+        "abilityMod": 0,
+        "ranks": 0,
+        "miscMod": 0
+      },
+      {
+        "name": "Perform",
+        "ability": "Charisma",
+        "isClassSkill": false,
+        "totalMod": 0,
+        "abilityMod": 0,
+        "ranks": 0,
+        "miscMod": 0
+      },
+      {
+        "name": "Profession",
+        "ability": "Wisdom",
+        "isClassSkill": false,
+        "totalMod": 0,
+        "abilityMod": 0,
+        "ranks": 0,
+        "miscMod": 0
+      },
+      {
+        "name": "Ride",
+        "ability": "Dexterity",
+        "isClassSkill": false,
+        "totalMod": 0,
+        "abilityMod": 0,
+        "ranks": 0,
+        "miscMod": 0
+      },
+      {
+        "name": "Sense Motive",
+        "ability": "Wisdom",
+        "isClassSkill": false,
+        "totalMod": 0,
+        "abilityMod": 0,
+        "ranks": 0,
+        "miscMod": 0
+      },
+      {
+        "name": "Sleight of Hand",
+        "ability": "Dexterity",
+        "isClassSkill": false,
+        "totalMod": 0,
+        "abilityMod": 0,
+        "ranks": 0,
+        "miscMod": 0
+      },
+      {
+        "name": "Spellcraft",
+        "ability": "Intelligence",
+        "isClassSkill": false,
+        "totalMod": 0,
+        "abilityMod": 0,
+        "ranks": 0,
+        "miscMod": 0
+      },
+      {
+        "name": "Stealth",
+        "ability": "Dexterity",
+        "isClassSkill": false,
+        "totalMod": 0,
+        "abilityMod": 0,
+        "ranks": 0,
+        "miscMod": 0
+      },
+      {
+        "name": "Survival",
+        "ability": "Wisdom",
+        "isClassSkill": false,
+        "totalMod": 0,
+        "abilityMod": 0,
+        "ranks": 0,
+        "miscMod": 0
+      },
+      {
+        "name": "Swim",
+        "ability": "Strength",
+        "isClassSkill": false,
+        "totalMod": 0,
+        "abilityMod": 0,
+        "ranks": 0,
+        "miscMod": 0
+      },
+      {
+        "name": "Use Magic Device",
+        "ability": "Charisma",
+        "isClassSkill": false,
+        "totalMod": 0,
+        "abilityMod": 0,
+        "ranks": 0,
+        "miscMod": 0
+      }
+    ],
+    "modifiers": []
+  }
 }

@@ -13,7 +13,7 @@ namespace PathfinderData.Core
         public PlayerCharacter()
         {
             AbilityScores = new AbilityScores();
-            AC = new ArmorClass(AbilityScores.Dexterity.ModValue);
+            AC = new ArmorClass(AbilityScores.Abilities["Dexterity"].ModValue);
             HitPoints = new Health();
             Skills = new Skills();
         }

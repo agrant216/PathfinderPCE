@@ -56,16 +56,31 @@ namespace PathfinderData.Core
     [Serializable]
     public class AbilityScores
     {
-        public AbilityScore Strength { get; set; } = new AbilityScore();
-        public AbilityScore Dexterity { get; set; } = new AbilityScore();
-        public AbilityScore Constitution { get; set; } = new AbilityScore();
-        public AbilityScore Intelligence { get; set; } = new AbilityScore();
-        public AbilityScore Wisdom { get; set; } = new AbilityScore();
-        public AbilityScore Charisma { get; set; } = new AbilityScore();
+        public Dictionary<string, AbilityScore> Abilities { get; set; } = new Dictionary<string, AbilityScore>()
+        {
+            {"Strength",  new AbilityScore("Strength")},
+            {"Dexterity",  new AbilityScore("Dexterity")},
+            {"Constitution",  new AbilityScore("Constitution")},
+            {"Intelligence",  new AbilityScore("Intelligence")},
+            {"Wisdom",  new AbilityScore("Wisdom")},
+            {"Charisma",  new AbilityScore("Charisma")},
+        };
+        public List<Modifier> Modifiers { get; set; } = new List<Modifier>();
+        //public AbilityScore Strength { get; set; } = new AbilityScore();
+        //public AbilityScore Dexterity { get; set; } = new AbilityScore();
+        //public AbilityScore Constitution { get; set; } = new AbilityScore();
+        //public AbilityScore Intelligence { get; set; } = new AbilityScore();
+        //public AbilityScore Wisdom { get; set; } = new AbilityScore();
+        //public AbilityScore Charisma { get; set; } = new AbilityScore();
     }
     [Serializable]
     public class AbilityScore
     {
+        public AbilityScore(string name)
+        {
+            Name = name;
+        }
+        public string Name { get; set; }
         public int BaseValue { get; set; } = 10;
         public int TempValue { get; set; } = 10;
         public int ModValue { get => (TempValue - 10) / 2; }
